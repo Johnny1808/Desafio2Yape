@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.Arrays;
 import java.util.List;
 
-import static utilitarios.utils.*;
+import static utils.utilitarios.*;
 
 public class DataFormPage {
 
