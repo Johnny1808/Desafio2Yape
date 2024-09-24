@@ -28,3 +28,4 @@ Las pruebas se considerarán exitosas cuando se verifique que el flujo funciona 
 - Inestabilidad de la aplicación.
 
 ## 6. Datos adicionales
+Se enviara un archivo word con mayor detalle
