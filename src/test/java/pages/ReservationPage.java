@@ -24,8 +24,18 @@ public class ReservationPage {
             MobileElement opc2 = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]")));
             opc2.click();
         } catch (Exception e) {
-            MobileElement opc2 = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]")));
-            opc2.click();
+            try {
+                MobileElement actu = (MobileElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.booking:id/bui_banner_button_flow")));
+
+                MobileElement opc3 = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup[2]")));
+                opc3.click();
+            } catch (Exception e2) {
+            }
+            try {
+                MobileElement opc2 = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]")));
+                opc2.click();
+            } catch (Exception e3) {
+            }
         }
     }
 

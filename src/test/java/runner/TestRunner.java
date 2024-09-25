@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/cucumber-html-report.html",
                 "json:target/cucumber-reports/cucumber.json"},
         monochrome = true,
-        tags = "@UnHappyPath-3"
+        tags = "@HappyPath-1"
 )
 public class TestRunner {
 }
